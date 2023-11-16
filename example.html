@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  <title>XLSX Example</title>
+</head>
+<body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Your data
+      var data = [
+        ["Name", "Age", "Country"],
+        ["John Doe", 30, "USA"],
+        ["Jane Doe", 25, "Canada"],
+      ];
+
+      // Create a new workbook and sheet
+      var wb = XLSX.utils.book_new();
+      var ws = XLSX.utils.aoa_to_sheet(data);
+
+      // Add the sheet to the workbook
+      XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+
+      // Save the workbook to a file
+      XLSX.writeFile(wb, "example.xlsx");
+    });
+  </script>
+</body>
+</html>

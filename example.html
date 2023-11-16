@@ -7,25 +7,13 @@
   <title>XLSX Example</title>
 </head>
 <body>
+  <h1>Example</h1>
+  <button id="btn" onclick="btnFunction()">click me!</button>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // Your data
-      var data = [
-        ["Name", "Age", "Country"],
-        ["John Doe", 30, "USA"],
-        ["Jane Doe", 25, "Canada"],
-      ];
-
-      // Create a new workbook and sheet
-      var wb = XLSX.utils.book_new();
-      var ws = XLSX.utils.aoa_to_sheet(data);
-
-      // Add the sheet to the workbook
-      XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-
-      // Save the workbook to a file
-      XLSX.writeFile(wb, "example.xlsx");
-    });
+ const btnFunction = () => {
+      console.log("Click me!");
+      alert("button clicked");
+    };
   </script>
 </body>
 </html>

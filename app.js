@@ -48,29 +48,6 @@ date.addEventListener("change", function () {
 
 numberOfCows.addEventListener("keyup", function () {
     changeNumberOfCows();
-    // let id = firstCowId.value;
-    // console.log("numberOfCows: ", numberOfCows.value);
-    // while (table.firstChild) {
-    //     table.removeChild(table.firstChild);
-    // }
-    // for (let index = 0; index < Math.ceil(numberOfCows.value / 10); index++) {
-    //     const tr = document.createElement("tr");
-    //     table.appendChild(tr);
-    //     for (let index2 = index * 10; index2 < index * 10 + 10; index2++) {
-    //         if (index2 < numberOfCows.value) {
-    //             const td = document.createElement("td");
-    //             if (firstCowId) {
-    //                 td.innerHTML = id;
-    //                 id++;
-    //             }
-    //             else
-    //                 td.innerHTML = index2 + 1;
-    //             tr.appendChild(td);
-    //         }
-    //     }
-    // }
-    // numbers = document.getElementsByTagName("td");
-    // numberClicks();
 });
 
 firstCowId.addEventListener("keyup", function () {
@@ -275,8 +252,3 @@ const changeNumberOfCows = () => {
 }
 
 changeNumberOfCows();
-
-// #43A843 ירוק
-// #3282F6 כחול
-// ##FA2E2E אדום
-// #FA2E2E
